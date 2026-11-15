@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Создать .venv",
+      "type": "shell",
+      "command": "python3 -m venv .venv && .venv/bin/pip install -U pip && (test -f requirements.txt && .venv/bin/pip install -r requirements.txt || true)",
+      "problemMatcher": []
+    },
+    {
+      "label": "Установить зависимости",
+      "type": "shell",
+      "command": ".venv/bin/pip install -r requirements.txt",
+      "problemMatcher": []
+    },
+    {
+      "label": "Ruff: проверка",
+      "type": "shell",
+      "command": ".venv/bin/ruff check .",
+      "problemMatcher": []
+    },
+    {
+      "label": "Тесты",
+      "type": "shell",
+      "command": ".venv/bin/pytest -v",
+      "group": { "kind": "test", "isDefault": true },
+      "problemMatcher": []
+    }
+  ]
+}
