@@ -24,3 +24,6 @@ htmlcov/
 # ОС
 .DS_Store
 Thumbs.db
+
+# Bot database
+*.sqlite3

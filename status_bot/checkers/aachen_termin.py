@@ -23,6 +23,7 @@ START_URL = (
     "https://bportal.staedteregion-aachen.de"
     "/detail/-/vr-bis-detail/dienstleistung/15000/show"
 )
+BOOKING_URL = "https://termine.staedteregion-aachen.de/auslaenderamt/"
 DEFAULT_ANLIEGEN = "RWTH Studenten"
 NO_SLOTS_TEXT = "Kein freier Termin verfügbar"
 
